@@ -6,7 +6,7 @@ print (hash_table)
 
 def delete(hash_table, key):
     """
-
+    Deleting elements from hash table
     :param hash_table: Given hash table
     :param key: input by user
     :return: None
@@ -19,6 +19,7 @@ def delete(hash_table, key):
         if key == k:
             key_exists = True
             break
+
     if key_exists:
         del bucket[i]
         print ('Key {} deleted'.format(key))
